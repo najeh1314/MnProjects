@@ -6,6 +6,7 @@ console.log(randomNumber);
 const guessInput = document.getElementById('guessInput');
 const guessButton = document.getElementById('guessButton');
 const message = document.getElementById('message');
+let attempts = 5;
 
 // Fonction pour afficher un message
 function showMessage(msg, color) {
@@ -18,28 +19,30 @@ function checkGuess() {
     const guess = parseInt(guessInput.value);
     if (isNaN(guess) || guess < 1 || guess > 100) {
         showMessage('Veuillez entrer un nombre entre 1 et 100.', 'red');
-    } else if (guess === randomNumber) {
-        showMessage(`Bravo! Vous avez deviné le nombre ${randomNumber} correctement!`, 'green');
-        guessInput.disabled = true;
-        guessButton.disabled = true;
     } else {
-        const diff = Math.abs(randomNumber - guess);
-        let msg;
-        let color;
-        if (diff > 50) {
-            msg = 'Vous êtes très loin!';
-            color = 'red';
-        } else if (diff > 30) {
-            msg = 'Vous êtes loin!';
-            color = 'orange';
-        } else if (diff > 10) {
-            msg = 'Vous êtes proche!';
-            color = 'yellow';
+        attempts--;
+        if (guess === randomNumber) {
+            showMessage(`Bravo! Vous avez deviné le nombre ${randomNumber} correctement!`, 'green');
+            guessInput.disabled = true;
+            guessButton.disabled = true;
         } else {
-            msg = 'Vous êtes très proche!';
-            color = 'lightgreen';
+            let msg;
+            let color;
+            if (attempts === 0) {
+                msg = `Désolé, vous avez utilisé toutes vos tentatives. Le nombre correct était ${randomNumber}.`;
+                color = 'red';
+                guessInput.disabled = true;
+                guessButton.disabled = true;
+            } else {
+                if (guess < randomNumber) {
+                    msg = `Le nombre que vous avez deviné est trop bas. Il vous reste ${attempts} tentative(s).`;
+                } else {
+                    msg = `Le nombre que vous avez deviné est trop haut. Il vous reste ${attempts} tentative(s).`;
+                }
+                color = 'black';
+            }
+            showMessage(msg, color);
         }
-        showMessage(msg, color);
     }
 }
 
