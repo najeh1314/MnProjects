@@ -2,10 +2,17 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.jumbotron {
-  background-color: #f8f9fa;
+.container {
+  max-width: 600px;
+  margin: 50px auto;
 }
 
-.navbar {
-  margin-bottom: 30px;
+#taskInput {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#addTaskButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
