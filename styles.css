@@ -1,10 +1,11 @@
-/* Ajoutez vos styles personnalisés ici */
-
 body {
   font-family: Arial, sans-serif;
 }
 
-.container {
-  margin-top: 50px;
+.jumbotron {
+  background-color: #f8f9fa;
 }
 
+.navbar {
+  margin-bottom: 30px;
+}
