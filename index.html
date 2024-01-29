@@ -3,22 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>Jeu de Devinette</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>To-Do List</h1>
-        <div class="input-group mb-3">
-            <input type="text" id="taskInput" class="form-control" placeholder="Ajouter une nouvelle tâche" aria-label="Ajouter une nouvelle tâche" aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button" id="addTaskButton">Ajouter</button>
-            </div>
-        </div>
-        <ul id="taskList" class="list-group">
-            <!-- Les tâches seront ajoutées ici dynamiquement -->
-        </ul>
+        <h1>Jeu de Devinette</h1>
+        <p>Devinez le nombre entre 1 et 100!</p>
+        <input type="number" id="guessInput" min="1" max="100">
+        <button id="guessButton">Devinez!</button>
+        <div id="message"></div>
     </div>
 
     <script src="script.js"></script>
