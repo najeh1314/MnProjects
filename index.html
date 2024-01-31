@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeu de Devinette</title>
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="container">
-        <h1>Jeu de Devinette</h1>
-        <p>Devinez le nombre entre 1 et 100! Vous avez 5 tentatives.</p>
-        <input type="number" id="guessInput" min="1" max="100">
-        <button id="guessButton">Devinez!</button>
-        <div id="message"></div>
+        <h1>Tic Tac Toe</h1>
+        <div class="board" id="board">
+            <!-- The game board will be dynamically generated here -->
+        </div>
+        <div id="status"></div>
+        <button id="restartBtn">Restart Game</button>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
