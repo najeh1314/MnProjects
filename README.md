@@ -1,27 +1,11 @@
-# Boutique En Ligne Awesome
+Tic Tac Toe Game Project
 
-Bienvenue sur la Boutique En Ligne Awesome, votre destination préférée pour une expérience exceptionnelle de shopping en ligne.
+This is a simple Tic Tac Toe game built using HTML, CSS, and JavaScript.
 
-## Description
+Instructions:
+1. Open index.html in your web browser.
+2. Click on the cells to make your move.
+3. The first player to get 3 of their symbols in a row (horizontally, vertically, or diagonally) wins.
+4. Click "Restart Game" to start a new game.
 
-Explorez la commodité du shopping en ligne avec la Boutique En Ligne Awesome. Notre plateforme conviviale vous propose une variété de produits de qualité, allant des articles tendance aux classiques intemporels.
-
-## Fonctionnalités
-
-- **Catalogue Varié :** Parcourez notre vaste gamme de produits pour découvrir des articles pour tous les goûts.
-
-- **Processus de Commande Simplifié :** Profitez d'un processus de commande intuitif garantissant une expérience d'achat fluide, du début à la fin.
-
-- **Paiement Sécurisé :** Effectuez des transactions en toute sécurité grâce à notre système de paiement sécurisé acceptant diverses méthodes, y compris les cartes de crédit et PayPal.
-
-- **Suivi des Commandes :** Restez informé sur l'état de votre commande à chaque étape grâce à notre système de suivi en temps réel.
-
-## Captures d'écran
-
-[Insérez ici quelques captures d'écran illustrant l'interface utilisateur de la Boutique En Ligne Awesome.]
-
-## Installation
-
-1. Clonez ce dépôt sur votre machine locale.
-   ```bash
-   git clone https://github.com/votre-utilisateur/boutique-en-ligne-awesome.git
+Enjoy playing!
