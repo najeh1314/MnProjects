@@ -12,7 +12,7 @@ public class AntiBiotique extends Medicament {
 	}
 
 	@Override
-	public String toStrng() {
+	public String desc() {
 		return this.nom;
 	}
 

@@ -2,7 +2,7 @@ package Pharmacie;
 
 public interface Article  {
 	double prix();
-	String toStrng();
+	String desc();
 	int qtite();
 	Medicament getMedic();
 }

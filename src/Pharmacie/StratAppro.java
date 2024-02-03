@@ -8,10 +8,4 @@ public class StratAppro implements StrategieMvm {
 		
 	}
 
-	@Override
-	public String nomStrategieMvm() {
-		// TODO Auto-generated method stub
-		return "Approvisionnement";
-	}
-
 }

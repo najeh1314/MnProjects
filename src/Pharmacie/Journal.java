@@ -2,16 +2,16 @@ package Pharmacie;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class SingletonJournal {
+public class Journal {
 	private String log;
-	private static SingletonJournal jsInstance;
+	private static Journal jsInstance;
 	
-	private SingletonJournal() {
+	private Journal() {
 		log = new String();
 	}
-	public static SingletonJournal getJsInstance() {
+	public static Journal getJsInstance() {
 		if(jsInstance == null)
-			jsInstance = new SingletonJournal();
+			jsInstance = new Journal();
 		return jsInstance;
 	} 
 	public String getLog() {
